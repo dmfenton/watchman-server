@@ -1,0 +1,8 @@
+#!/bin/sh
+git clone https://github.com/facebook/watchman.git /tmp/watchman
+cd /tmp/watchman
+git checkout v4.6.0
+./autogen.sh
+./configure
+make
+make install
